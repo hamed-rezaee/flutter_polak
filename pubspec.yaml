@@ -1,5 +1,5 @@
 name: flutter_polak
-description: A new Flutter project.
+description: A Flutter project.
 
 version: 1.0.0+1
 
@@ -9,6 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  shared_preferences: ^0.5.7
 
   cupertino_icons: ^0.1.2
 
@@ -17,4 +20,13 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
+  assets:
+    - assets/locale/localization_en.json
+    - assets/locale/localization_fa.json
+
+  fonts:
+    - family: yekan
+      fonts:
+        - asset: assets/fonts/yekan.ttf
+
   uses-material-design: true
